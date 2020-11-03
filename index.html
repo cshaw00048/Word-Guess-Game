@@ -1,48 +1,30 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My Word Guess Game</title>
-    <link rel="stylesheet" href="../Word-Guess-Game/reset.css" />
-    <link rel="stylesheet" href="../Word-Guess-Game/style.css" />
-    <link rel="stylesheet" href="../Word-Guess-Game/style2.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Hangman</title>
   </head>
   <body>
-    <div id="wrapper">
-      <h1 class="chrome">Guess The Word</h1>
-      <h3 class="dreams">2019 Hip Hop and R&B Hits</h3>
-    </div>
-
-    <div id="container">
-      <h2 id="music"></h2>
-      <div id="band-div">
-        <img
-          src="assets/images/GuessWord.jpg"
-          alt="Guess The Word: 2019 Hip Hop Edition"
-        />
+    <div class="container">
+      <h1 class="text-center">Hangman</h1>
+      <div class="float-right">
+        Wrong Guesses: <span id="mistakes">0</span> of <span id="maxWrong"></span>
       </div>
-      <div id="game-section">
-        <p>Press any key to get started!</p>
-        <div>
-          <h3 class="section-title">Wins</h3>
-          <div id="wins"></div>
-        </div>
-        <div id="current-word-section">
-          <h3 class="section-title">Current Word</h3>
-          <div id="current-word"></div>
-        </div>
-        <div id="guesses-remaining-section">
-          <h3 class="section-title">Number of Guesses Remaining</h3>
-          <div id="guesses-remaining"></div>
-        </div>
-        <div id="guessed-letters-section">
-          <h3 class="section-title">Letters Already Guessed</h3>
 
-          <div id="guessed-letters"></div>
-        </div>
+      <div class="text-center">
+        <p>Guess the Disney Movie</p>
+        <p id="wordSpotlight">The word to be guessed goes here</p>
+        
+        <div id="keyboard"></div>
+
+        <button class="btn btn-info" onClick="reset()">Reset</button>
+
       </div>
     </div>
-
-    <script type="text/javascript" src="../Word-Guess-Game/game.js"></script>
   </body>
 </html>
