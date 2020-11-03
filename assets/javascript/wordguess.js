@@ -34,7 +34,7 @@ let mistakes = 0;
 let guessed = [];
 
 function randomWord() {
-    answer = disney_movie[Math.floor(Math.random() * disney_movie.length)];
+    answer = disney[Math.floor(Math.random() * disney.length)];
 
     alert(answer);
 }
