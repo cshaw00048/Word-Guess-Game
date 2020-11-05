@@ -49,4 +49,11 @@ function generateButtons() {
     ` + letter + `
     </button>
     `).join("");
+
+    document.getElementById('keyboard').innerHTML = buttonsHTML;
+}
+
+function handleGuess(chosenLetter) {
+    guess.indexOf(chosenLetter) === -1 ? guessed.push(chosenLette) : null;
+    document.getElementByID(chosenLetter).setAttribute('disabled', true);
 }
