@@ -35,8 +35,6 @@ let guessed = [];
 
 function randomWord() {
     answer = disney[Math.floor(Math.random() * disney.length)];
-
-    alert(answer);
 }
 
 randomWord();
