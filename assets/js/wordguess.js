@@ -56,4 +56,15 @@ function generateButtons() {
 function handleGuess(chosenLetter) {
     guess.indexOf(chosenLetter) === -1 ? guessed.push(chosenLette) : null;
     document.getElementByID(chosenLetter).setAttribute('disabled', true);
+
+
+    if (answer.indexOf(chosenLetter) >=0) {
+        guessWord();
+        checkIfGameWon();
+    } else if (answer.indexOf(chosenLetter) === -1) {
+        mistakes++;
+        updateMistakes();
+        checkIfGameLost();
+        updateHangmanPicture();
+    } 
 }
